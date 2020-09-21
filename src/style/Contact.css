@@ -1,0 +1,13 @@
+
+.contact-tile img {
+  height: 30px;
+  width: auto;
+  margin: auto 15px;
+}
+
+.contact-tile a {
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
