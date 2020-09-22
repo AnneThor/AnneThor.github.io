@@ -17,7 +17,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
 
-          <section id="welcome-section">
+          <section id="home">
             <h1>Anne Thorsteinson</h1>
             <p>Full Stack Web Developer | Project Manager | Travel Expert</p>
           </section>
