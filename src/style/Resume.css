@@ -1,0 +1,88 @@
+#resume {
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  background-color: black;
+  overflow-y: scroll;
+}
+
+.resume-container {
+  color: black;
+  font-weight: bold;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  opacity: .5;
+  width: 400px;
+  max-width: 80%;
+  height: auto;
+  max-height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 3% 8%;
+  display: grid;
+  grid-template: "education education-details"
+                 "work work-details"
+                 "stack stack-details"
+                 "skills skills-details";
+}
+
+.resume-container p {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+
+.education {
+  grid-area: education;
+}
+
+.education-details {
+  grid-area: education-details;
+}
+
+.work {
+  grid-area: work;
+}
+
+.work-details {
+  grid-area: work-details;
+}
+
+.stack {
+  grid-area: stack;
+}
+
+.stack-details {
+  grid-area: stack-details;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.stack-details li {
+  list-style: none;
+  margin: 3px;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.skills-details {
+  grid-area: skills-details;
+}
+
+.education, .work, .stack, .skills {
+  text-align: right;
+}
+
+.education-details, .work-details, .stack-details, .skills-details {
+  padding-left: 5px;
+  text-align: left;
+}

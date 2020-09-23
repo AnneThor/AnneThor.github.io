@@ -1,13 +1,15 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import '../App.css';
 
 function Header() {
   return(
     <nav id="navbar">
       <ul>
-        <li><a className="navlink" href="#contact">Resume</a></li>
-        <li><a className="navlink" href="#projects">Portfolio</a></li>
-        <li><a className="navlink" href="home">Home</a></li>
+
+        <li><Link to="/Resume">Resume</Link></li>
+        <li><Link to="/Portfolio">Portfolio</Link></li>
+        <li><Link to="/">Home</Link></li>
       </ul>
     </nav>
   );
