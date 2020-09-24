@@ -36,15 +36,37 @@
   justify-content: center;
 }
 
-#footer-right {
-  font-size: 2rem;
-  margin-right: 3px;
-}
-
 #footer p {
-
   font-family: 'Goudy Bookletter 1911', serif;
   color:white;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+@media (max-width: 815px) {
+  #footer {
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #footer-left {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #footer-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #footer ul {
+    padding-left: 0;
+  }
+
+  #footer li {
+    font-size: 1.5rem;
+  }
 }

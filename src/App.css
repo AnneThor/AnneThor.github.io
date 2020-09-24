@@ -42,28 +42,6 @@ html, body {
   padding-top: 100px;
 }
 
-
-@media (max-width: 815px) {
-  #navbar {
-    height: auto;
-    margin: 0;
-  }
-
-  #navbar ul {
-    flex-direction: column-reverse;
-    height: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 2% 0;
-  }
-
-  #navbar li {
-    width: 100%;
-    display: block;
-  }
-}
-
-
 #navbar a {
   text-decoration: none;
   color: white;
@@ -101,11 +79,6 @@ html, body {
   background-color: black;
 }
 
-@media (max-width: 815px) {
-  #projects {
-    overflow-y: scroll;
-  }
-}
 
 #projects {
   padding-bottom: 10vh;
@@ -128,4 +101,47 @@ html, body {
   width: 80%;
   max-width: 80%;
   margin: auto;
+}
+
+@media (max-width: 815px) {
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 350px) {
+
+  #projects {
+    overflow-y: scroll;
+  }
+
+  #navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: auto;
+    margin: 0;
+  }
+
+  #navbar ul {
+    flex-direction: column-reverse;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  #navbar li {
+    width: 100%;
+    display: block;
+  }
+
+  #home {
+    text-align: center;
+  }
+
 }
