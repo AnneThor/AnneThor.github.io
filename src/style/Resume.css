@@ -1,39 +1,37 @@
 #resume {
-  width: 100vw;
-  max-width: 100vw;
-  height: auto;
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
   background-color: black;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .resume-container {
   color: black;
+  font-size: 1.2rem;
   font-weight: bold;
   background-color: #ffffff;
   background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
   opacity: .5;
-  width: 400px;
+  width: 500px;
   max-width: 80%;
   height: auto;
   max-height: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
+  margin-top: 10vh;
   margin-bottom: 10px;
   border-radius: 10px;
   padding: 3% 8%;
   display: grid;
-  grid-template: "education education-details"
-                 "work work-details"
-                 "stack stack-details"
-                 "skills skills-details";
+  grid-template: "education education-details  education-details  education-details"
+                 "work work-details work-details work-details"
+                 "stack stack-1 stack-2 stack-3"
+                 "skills skills-details skills-details skills-details";
 }
 
 .resume-container p {
   padding-bottom: 0;
   padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 
@@ -57,18 +55,32 @@
   grid-area: stack;
 }
 
-.stack-details {
-  grid-area: stack-details;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-between;
+.stack-1 {
+  grid-area: stack-1;
+
 }
 
-.stack-details li {
-  list-style: none;
-  margin: 3px;
+.stack-2 {
+  grid-area: stack-2;
+
 }
+
+.stack-3 {
+  grid-area: stack-3;
+
+}
+
+.stack-1, .stack-2, .stack-3 {
+  margin-top: 0;
+  padding-top: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.stack-1 p, .stack-2 p, .stack-3 p {
+  /* padding-right: 5px; */
+}
+
 
 .skills {
   grid-area: skills;
@@ -82,7 +94,14 @@
   text-align: right;
 }
 
-.education-details, .work-details, .stack-details, .skills-details {
-  padding-left: 5px;
+.education-details, .work-details, .skills-details {
+  padding-left: 40px;
   text-align: left;
+}
+
+#resume img {
+  margin: 0;
+  height: 20px;
+  width: auto;
+  padding: 0;
 }
