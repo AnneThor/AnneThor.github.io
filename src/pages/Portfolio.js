@@ -8,6 +8,10 @@ export default function Portfolio() {
       <section id="projects">
         <div className="spacer"> </div>
         <div className="projects-grid">
+          <ProjectTile link="choropleth-map/"
+                       imageLocation="choropleth-map.png"
+                       imageDescription="portion of choropleth map showing tooltip"
+                       title="US Education | D3" />
           <ProjectTile link="HeatMap/"
                        imageLocation="heat-map.png"
                        imageDescription="header and portion of interactive heat map"
