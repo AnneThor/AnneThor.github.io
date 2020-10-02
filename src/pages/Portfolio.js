@@ -8,6 +8,10 @@ export default function Portfolio() {
       <section id="projects">
         <div className="spacer"> </div>
         <div className="projects-grid">
+          <ProjectTile link="treemap/"
+                       imageLocation="treemap.png"
+                       imageDescription="portion of treemap, with differently sized squares representing different portions of total sales"
+                       title="Video Game Sales | D3" />
           <ProjectTile link="choropleth-map/"
                        imageLocation="choropleth-map.png"
                        imageDescription="portion of choropleth map showing tooltip"
